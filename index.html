@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>I am Max Mints</title>
+</head>
+<body>
+
+  <div class="firstblock">
+      <img src="C:\Users\1\PycharmProjects\pythonProject8\pict\iam.jpg"
+         alt="I am" width="200" height="250" float=left>
+      <a class="first_name">Минц</a>
+      <a class="name">Максим</a>
+<!--      <span>Максим</span>-->
+<!--      <span>Валерьевич</span>-->
+
+  </div>
+  <button type="button" class="collapsible">Кто я и откуда</button>
+  <div class="contentcollaps">
+      <p>Родился 15.09.1984 в г.Калоча, Венгерская Республика</p>
+      <p>Живу в Московской области, город Электроугли</p>
+      <p>Проффессия сегодня - инженер по металлобработке</p>
+  </div>
+  <button type="button" class="collapsible">Мой путь к программированию</button>
+  <div class="contentcollaps">
+    <div class="timeline">
+        <div class="container left">
+          <div class="content">
+            <h2>2023</h2>
+            <p>Поступил в IT школу Skillfactory на специальность Fullstack разработчик на Python</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>2018</h2>
+            <p>Перешел на работу в компанию "Хоффманн Профессиональный Инструмент" на должность Инженер по применению</p>
+          </div>
+        </div>
+         <div class="container left">
+          <div class="content">
+            <h2>2007</h2>
+            <p>Закончил университет и был принят в компанию "Комбитек" на место технического специалиста</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>2004</h2>
+            <p>Закончил коледж. Поступил в ЗНТУ на машиностроительный факультет. Специальность: "Металлорежущие станки и системы" </p>
+          </div>
+        </div>
+         <div class="container left">
+          <div class="content">
+            <h2>1999</h2>
+            <p>После 9-ого класса поступил в колледж на специальность "Обработка металлов резанием"</p>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <button type="button" class="collapsible">Моя профессия сейчас</button>
+  <div class="contentcollaps">
+      <p>Я являюсь инженером по применению металлорежущего инструмента. Ищу верные решения, внедряю их на различных предприятиях России</p>
+      <p>Занимаюсь этой без приувеличения интерсеной работой с 2007 г, сразу после окончания университета</p>
+      <img class="img" src="http://wanfon-prototype.com/images/banner_AS.jpg"
+         alt="turning" width="1000" height="150" float=left>
+  </div>
+
+  <button type="button" class="collapsible">Почему IT?</button>
+  <div class="contentcollaps">
+      <p>Ёще в школе хотел заниматься программированием, ходил на школьный факультатив по изучению языка Pascal. Но
+          тогда не сложилось и я свернул на другую тропинку. А теперь хочу освоить новую для себя профессию, и осуществить старую мечту.
+      </p>
+      <img class="img" src="https://blog.staah.com/wp-content/uploads/2017/09/staah-cm-report-sec4.jpeg"
+           alt="IT" width="1000" height="150" float=right>
+  </div>
+
+  <button type="button" class="collapsible">Что я знаю в IT</button>
+  <div class="contentcollaps">
+      <p>Backend: Python, Django</p>
+      <p>Frontend: JS, HTML, CSS</p>
+      <img class="img" src="https://www.testpreptraining.com/blog/wp-content/uploads/2020/03/Cloud-Computing-5.png"
+           alt="python" height="150">
+  </div>
+
+  <button type="button" class="collapsible">Как со мной связаться</button>
+  <div class="contentcollaps">
+      <p>Телефон: +7ххххххххх</p>
+      <p>Email: mints_xx@xxxx.ru</p>
+      <img class="img" src="https://i.siteapi.org/gvq7eyaA8Q1-Y7aTQG_5bAs0N2s=/fit-in/1400x1000/center/top/730cb0935853938.s.siteapi.org/img/85d32f2da675087d0d1ee4665c01c68c132ac013.jpg"
+           alt="contacts" width="1000" height="150" float=right>
+  </div>
+
+<script>
+let coll = document.getElementsByClassName("collapsible");
+let i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
